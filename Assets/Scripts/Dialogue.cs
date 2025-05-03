@@ -4,6 +4,7 @@ using System.Collections;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI nameText; // Reference to the TextMeshProUGUI component for displaying the NPC's name
     [SerializeField] private TextMeshProUGUI dialogueText; // Reference to the TextMeshProUGUI component for displaying dialogue
     [SerializeField] private GameObject dialogueBox; // Reference to the dialogue box object
     private ArrayList dialogueLines; // Array of dialogue lines to display
@@ -11,7 +12,7 @@ public class Dialogue : MonoBehaviour
 
     private int currentLineIndex = 0; // Index of the current dialogue line being displayed
 
-    void Start()
+    private void Start()
     {
         dialogueText.text = ""; // Clear the text at the start
         dialogueBox.SetActive(false); // Deactivate the dialogue box at the start
@@ -25,10 +26,12 @@ public class Dialogue : MonoBehaviour
         dialogueLines.Add(line); // Add the new line to the dialogue lines array
     }
 
-    public void StartDialogue(string[] dialogueLines)
+    public void StartDialogue(string name, string[] dialogueLines)
     {
         if (dialogueBox.activeSelf) return; // If the dialogue object is already active, exit the method
         if (dialogueLines == null || dialogueLines.Length == 0) return; // If there are no dialogue lines, exit the method
+
+        nameText.text = name; // Set the NPC's name in the dialogue box
 
         this.dialogueLines = new ArrayList(); // Initialize the dialogue lines array
         foreach (string line in dialogueLines) // Loop through each line in the provided dialogue lines
@@ -36,10 +39,10 @@ public class Dialogue : MonoBehaviour
 
         dialogueBox.SetActive(true); // Activate the dialogue object
         currentLineIndex = 0; // Reset the current line index to 0
-        StartCoroutine(TypeLine(dialogueLines[currentLineIndex].ToString())); // Start typing the first line of dialogue
+        StartCoroutine(TypeLines(dialogueLines[currentLineIndex].ToString())); // Start typing the first line of dialogue
     }
-    
-    IEnumerator TypeLine(string line)
+
+    IEnumerator TypeLines(string line)
     {
         dialogueText.text = ""; // Clear the text before typing out the new line
         bool spacePressed = false; // Flag to track if space was pressed
@@ -54,7 +57,7 @@ public class Dialogue : MonoBehaviour
             }
 
             dialogueText.text += letter; // Add each letter to the text one by one
-            
+
             float felapsedTime = 0f;
             float fwaitTime = typingSpeed; // Wait time for typing speed
             while (felapsedTime < fwaitTime)
@@ -86,10 +89,15 @@ public class Dialogue : MonoBehaviour
             yield return null; // Wait for the next frame
         }
 
+        DisplayNextDialogueLine();
+    }
+
+    private void DisplayNextDialogueLine()
+    {
         if (currentLineIndex < dialogueLines.Count - 1) // If there are more lines to display
         {
             currentLineIndex++; // Move to the next line
-            StartCoroutine(TypeLine(dialogueLines[currentLineIndex].ToString())); // Start typing the next line
+            StartCoroutine(TypeLines(dialogueLines[currentLineIndex].ToString())); // Start typing the next line
         }
         else // If there are no more lines to display
         {

@@ -26,23 +26,7 @@ public class NPC : MonoBehaviour
 
     public void Talk()
     {
-        dialogue.StartDialogue(conversationLines); // Start the dialogue with the conversation lines
+        dialogue.StartDialogue(npcName, conversationLines); // Start the dialogue with the conversation lines
     }
-
-    // private ArrayList getConversation()
-    // {
-    //     // Return a conversation line based on the NPC's name
-    //     switch (npcName)
-    //     {
-    //         case "Bob":
-    //             return new ArrayList() { "Hello, I'm Bob!", "How are you?" };
-    //         case "Alice":
-    //             return new ArrayList() { "Hi, I'm Alice!", "Nice to meet you!" };
-    //         case "Charlie":
-    //             return new ArrayList() { "Hey, I'm Charlie!", "What brings you here?" };
-    //         default:
-    //             return new ArrayList() { "Hi, I'm " + npcName + "!", "Welcome to our world!" };
-    //     }   
-    // }
 
 }
