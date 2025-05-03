@@ -7,102 +7,102 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: attack
-    second: {fileID: 7400000, guid: 2e8e1f06246f4944aab4d8b6c69defa6, type: 2}
+    second: {fileID: 7400000, guid: 55cc3cc31b77c4a45a699ddac4c707dc, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: axe
-    second: {fileID: 7400000, guid: 7f9352db478dd5148b6b61190d9d4a1b, type: 2}
+    second: {fileID: 7400000, guid: bfb842cd3e2f32f498d9cad283b28ec0, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: carry
-    second: {fileID: 7400000, guid: ef639bcb78e05fa49b98970e0e791d5e, type: 2}
+    second: {fileID: 7400000, guid: 0f5ef75fed6bc9d4bbf88da84b7c8ba6, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: casting
-    second: {fileID: 7400000, guid: a1a02d389c7a1a348bfdd2a81bcde3fb, type: 2}
+    second: {fileID: 7400000, guid: 9bb65022c85f33548b60dc396b8f1fb8, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: caught
-    second: {fileID: 7400000, guid: d0f1f701895fdd849bf0b6a66475a47c, type: 2}
+    second: {fileID: 7400000, guid: fb5689cf41314f6449cfbfc85d6d9e59, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: death
-    second: {fileID: 7400000, guid: 9afa54a9d5250304384de4b3b2e02a2a, type: 2}
+    second: {fileID: 7400000, guid: 71b9041947e5835459e10ded41ec73eb, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: dig
-    second: {fileID: 7400000, guid: a44b03db663aa5241ad365f514139ca4, type: 2}
+    second: {fileID: 7400000, guid: 7f24d7fb0d2f72940963c1ca443b26a1, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: doing
-    second: {fileID: 7400000, guid: c291f8547ffb50e4a8a9bd1342cb9965, type: 2}
+    second: {fileID: 7400000, guid: 17403b556cab9d64cb4922fc4996d15b, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: hamering
-    second: {fileID: 7400000, guid: 9e95803c33fc7c64b8557cc611fa8289, type: 2}
+    second: {fileID: 7400000, guid: 41b7e712cda35784299323425fefdd83, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: hurt
-    second: {fileID: 7400000, guid: fd24229f05e145442a085ce6d3fdad29, type: 2}
+    second: {fileID: 7400000, guid: a0553e06ce279024890bdb469177a7e1, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: idle
-    second: {fileID: 7400000, guid: 438d0be2e3d52bf4ba87748c3b6119a8, type: 2}
+    second: {fileID: 7400000, guid: 42726467dfdf9f4488b5cf4047c48fec, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: jump
-    second: {fileID: 7400000, guid: e266def48fdeb764f9abff1788950e45, type: 2}
+    second: {fileID: 7400000, guid: 5aa9844cab5634246a2f9dee0e73b590, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: mining
-    second: {fileID: 7400000, guid: b9526e55f3554c04597eec04146d8527, type: 2}
+    second: {fileID: 7400000, guid: fabfb11e3e7635d489eea31a42ccddc6, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: reeling
-    second: {fileID: 7400000, guid: d0f2277c497618b48835d67e68854fdf, type: 2}
+    second: {fileID: 7400000, guid: cbe2d7cbe543f504ab9b1d4e998bbd71, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: roll
-    second: {fileID: 7400000, guid: 19fc10a0e0a17794d89eae7a538249d8, type: 2}
+    second: {fileID: 7400000, guid: f713db1ef7ff8294fae607daf4226287, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: run
-    second: {fileID: 7400000, guid: 75ac63fdb4831ea489798a8fbea9b442, type: 2}
+    second: {fileID: 7400000, guid: 408b27a31e94f9f4e8eea47f87f7e3b1, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: swimming
-    second: {fileID: 7400000, guid: cca78857f9ce3da4fa47ced24d9642db, type: 2}
+    second: {fileID: 7400000, guid: 3211814143adc704a9ba1d2d4b52f104, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: waiting
-    second: {fileID: 7400000, guid: 3aa3b582c77143f46a1160206b21c4f5, type: 2}
+    second: {fileID: 7400000, guid: aa68b827e4e609b438290e9a8d85693e, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: walk
-    second: {fileID: 7400000, guid: ce26787202df655488ae77cbc9205343, type: 2}
+    second: {fileID: 7400000, guid: 901e4500af722e04788d32a36fa083c8, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: watering
-    second: {fileID: 7400000, guid: 5e422ed0257a4b44e9b94900659587f8, type: 2}
+    second: {fileID: 7400000, guid: faa6b08fff87b9743b25ae00f28f55c9, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -198,7 +198,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638818870098510085
+  platformSettingsDirtyTick: 638818879146350286
   textureAssetName: 
   singleSpriteImportData:
   - name: 

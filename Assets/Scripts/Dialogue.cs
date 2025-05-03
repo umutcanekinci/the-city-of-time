@@ -13,12 +13,11 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         dialogueText.text = ""; // Clear the text at the start
-        StartDialogue(); // Start the dialogue when the script starts
-        
     }
 
     public void StartDialogue()
     {
+        Debug.Log("Starting dialogue..."); // Log that the dialogue is starting
         gameObject.SetActive(true); // Activate the dialogue object
         currentLineIndex = 0; // Reset the current line index to 0
         StartCoroutine(TypeLine(dialogueLines[currentLineIndex])); // Start typing the first line of dialogue

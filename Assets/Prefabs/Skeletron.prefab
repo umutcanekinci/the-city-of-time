@@ -100,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 6271906065691911538}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 980459581498824386, guid: ab3578708ef06b74ab15420822113db9, type: 3}
+  m_Controller: {fileID: 9100000, guid: bdcdb8bcc5fda3f40a9308b42a680ed5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -126,7 +126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 0}
   player: {fileID: 0}
-  interactionCollider: {fileID: 0}
   isInRange: 0
 --- !u!58 &6325094000111108130
 CircleCollider2D:
