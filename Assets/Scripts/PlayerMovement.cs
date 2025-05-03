@@ -42,9 +42,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isWalking()) // If the player is moving
         {
-            rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime); // Move the player
-            animator.SetFloat("moveX", direction.x); // Set the x direction for animation
-            animator.SetFloat("moveY", direction.y); // Set the y direction for animation
+            rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime); // Move the player     
         }
         else
         {
