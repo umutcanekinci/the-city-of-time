@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal; // Horizontal input value
     private float vertical; // Vertical input value
     private Vector2 direction = Vector2.zero; // Direction of movement
+    public event Action onPlayerMove; // Event to notify when the player moves
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal"); // Get horizontal input (A/D or Left/Right arrow keys)
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         if (isWalking()) // If the player is moving
         {
             rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime); // Move the player     
+            onPlayerMove?.Invoke(); // Invoke the player move event
         }
         else
         {
