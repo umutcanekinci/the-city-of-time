@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator; // Reference to the Animator component
     [SerializeField] private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
     [SerializeField] private float speed = 5f; // Speed of the player movement
+    [SerializeField] private AudioSource audioSource; // Reference to the AudioSource component
+    [SerializeField] private AudioClip walkingClip; // Walking sound clip
 
     private float horizontal; // Horizontal input value
     private float vertical; // Vertical input value
@@ -33,6 +35,25 @@ public class PlayerMovement : MonoBehaviour
 
         Move();
         Flip(); // Flip the player sprite based on movement direction
+
+        if (isWalking()) // If the player is moving
+        {
+            if (!audioSource.isPlaying) // Only play the clip if it's not already playing
+            {
+                if (audioSource.clip != walkingClip) // Check if the correct clip is already set
+                {
+                    audioSource.clip = walkingClip; // Set the walking sound clip
+                }
+                audioSource.Play(); // Play the clip
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying) // Stop the clip only if it's playing
+            {
+                audioSource.Pause(); // Stop the walking sound if not moving
+            }
+        }
     }
 
     private void Move()

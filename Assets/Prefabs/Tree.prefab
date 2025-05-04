@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 7404380417490598244}
   - component: {fileID: 3379637845763742785}
   - component: {fileID: 8131778493445026774}
-  - component: {fileID: 5259264475137753308}
+  - component: {fileID: 1870157951537110870}
+  - component: {fileID: 1428707300023058035}
+  - component: {fileID: 8770915487980075556}
   m_Layer: 6
   m_Name: Tree
   m_TagString: Untagged
@@ -52,19 +54,18 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
-        m_MethodName: PlayCutAnimation
-        m_Mode: 2
+      - m_Target: {fileID: 1428707300023058035}
+        m_TargetAssemblyTypeName: ItemSource, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 3379637845763742785}
-          m_ObjectArgumentAssemblyTypeName: TreeHp, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: axe
           m_BoolArgument: 0
         m_CallState: 2
-  npc: {fileID: 0}
 --- !u!114 &3611911717203643046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7c8859c1d3303448900ec4bb6213c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemManager: {fileID: 0}
   maxHp: 100
-  cuttedTreePrefab: {fileID: 1845961640223985044, guid: 3da28a64509d343438567bf741001407, type: 3}
   currentHp: 0
 --- !u!61 &8131778493445026774
 BoxCollider2D:
@@ -175,7 +176,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.61, y: 0.36}
   m_EdgeRadius: 0
---- !u!212 &5259264475137753308
+--- !u!212 &1870157951537110870
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,3 +231,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1428707300023058035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357596557197709044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6c0c29676143c41a175b97bc4ba7d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 0
+  itemAmount: 5
+  itemSprite: {fileID: 7440981132975211316, guid: ca88e8313bedb7b4bacab7110183422e, type: 3}
+  itemManager: {fileID: 0}
+  playerTools: {fileID: 0}
+  dialogue: {fileID: 0}
+  treeHp: {fileID: 3379637845763742785}
+--- !u!114 &8770915487980075556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357596557197709044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c4bb536343b2843a1c5fb683688fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuttedTreePrefab: {fileID: 1845961640223985044, guid: 3da28a64509d343438567bf741001407, type: 3}
+  sourceHp: {fileID: 3379637845763742785}
