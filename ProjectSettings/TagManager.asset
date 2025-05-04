@@ -57,6 +57,9 @@ TagManager:
   - name: Player
     uniqueID: 2576010307
     locked: 0
+  - name: Player Skin
+    uniqueID: 2121545731
+    locked: 0
   - name: TopPlayer
     uniqueID: 889793585
     locked: 0
