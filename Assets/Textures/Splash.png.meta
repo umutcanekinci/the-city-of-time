@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: a756c1da9bc443840b8e811ba5df2957
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4662589367000079645
+    second: splash2 - Copy_0
+  - first:
+      213: 4055596209026903624
+    second: splash2 - Copy_1
+  - first:
+      213: 1628853315995174441
+    second: splash2 - Copy_2
+  - first:
+      213: 2775810021162729891
+    second: splash2 - Copy_3
+  - first:
+      213: -7273150309458598160
+    second: splash2 - Copy_4
+  - first:
+      213: -5382483754851525915
+    second: splash2 - Copy_5
+  - first:
+      213: -5927573936172191067
+    second: splash2 - Copy_6
+  - first:
+      213: -1637571305702481412
+    second: splash2 - Copy_7
+  - first:
+      213: -3549245746049583754
+    second: splash2 - Copy_8
+  - first:
+      213: -7104464228056140845
+    second: splash2 - Copy_9
+  - first:
+      213: -6847659741310750030
+    second: splash2 - Copy_10
+  - first:
+      213: -7342761102572891001
+    second: splash2 - Copy_11
+  - first:
+      213: -2937903567969218016
+    second: splash2 - Copy_12
+  - first:
+      213: 1233303664720711452
+    second: splash2 - Copy_13
+  - first:
+      213: 7121125812487680659
+    second: splash2 - Copy_14
+  - first:
+      213: -4593181584155879499
+    second: splash2 - Copy_15
+  - first:
+      213: 2595189612986071167
+    second: splash2 - Copy_16
+  - first:
+      213: 879422106138134790
+    second: splash2 - Copy_17
+  - first:
+      213: 8820769248016356305
+    second: splash2 - Copy_18
+  - first:
+      213: -3311030634670268186
+    second: splash2 - Copy_19
+  - first:
+      213: 6747830552703949720
+    second: splash2 - Copy_20
+  - first:
+      213: 7606327797741957664
+    second: splash2 - Copy_21
+  - first:
+      213: -380325309028097426
+    second: splash2 - Copy_22
+  - first:
+      213: -4069786003009366682
+    second: splash2 - Copy_23
+  - first:
+      213: 3743697009714477057
+    second: splash2 - Copy_24
+  - first:
+      213: 5708245074032531970
+    second: splash2 - Copy_25
+  - first:
+      213: 5805386366133014569
+    second: splash2 - Copy_26
+  - first:
+      213: -3526952472603953487
+    second: splash2 - Copy_27
+  - first:
+      213: 3612777560265622895
+    second: splash2 - Copy_28
+  - first:
+      213: 5366620469472680035
+    second: splash2 - Copy_29
+  - first:
+      213: 6870242513509328915
+    second: splash2 - Copy_30
+  - first:
+      213: -241578928895269230
+    second: splash2 - Copy_31
+  - first:
+      213: 7095763650024613581
+    second: splash2 - Copy_32
+  - first:
+      213: 4171231338210699246
+    second: splash2 - Copy_33
+  - first:
+      213: -3406337064271110917
+    second: splash2 - Copy_34
+  - first:
+      213: 8768361775127356609
+    second: splash2 - Copy_35
+  - first:
+      213: -6699547893761116035
+    second: splash2 - Copy_36
+  - first:
+      213: 3391235840830269615
+    second: splash2 - Copy_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: splash2 - Copy_0
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 820
+        width: 825
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e262769ca72b4fb0800000000000000
+      internalID: -4662589367000079645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 402
+        width: 145
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e287fb34f584830800000000000000
+      internalID: 4055596209026903624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_2
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 265
+        width: 146
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9260c1bf579da9610800000000000000
+      internalID: 1628853315995174441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_3
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 583
+        width: 203
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1cf53e188a58620800000000000000
+      internalID: 2775810021162729891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_4
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 581
+        width: 144
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6a2be0454901b90800000000000000
+      internalID: -7273150309458598160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_5
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 523
+        width: 172
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea93c6ea839d45b0800000000000000
+      internalID: -5382483754851525915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_6
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 581
+        width: 145
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2b79229e60dbda0800000000000000
+      internalID: -5927573936172191067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_7
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 522
+        width: 182
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf12b3dd29d2649e0800000000000000
+      internalID: -1637571305702481412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_8
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 583
+        width: 182
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675f5267ccb8ebec0800000000000000
+      internalID: -3549245746049583754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_9
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 581
+        width: 165
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d37e37fc6fd76d90800000000000000
+      internalID: -7104464228056140845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_10
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 583
+        width: 163
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2fd68eeb938f0a0800000000000000
+      internalID: -6847659741310750030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_11
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 581
+        width: 144
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784569a4ea5491a90800000000000000
+      internalID: -7342761102572891001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_12
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 583
+        width: 176
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02297d645487a37d0800000000000000
+      internalID: -2937903567969218016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_13
+      rect:
+        serializedVersion: 2
+        x: 3689
+        y: 581
+        width: 165
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f8dd316239d1110800000000000000
+      internalID: 1233303664720711452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_14
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 431
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3927136723253d260800000000000000
+      internalID: 7121125812487680659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_15
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 215
+        width: 181
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7d5875fadb140c0800000000000000
+      internalID: -4593181584155879499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_16
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 215
+        width: 163
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7871def337f30420800000000000000
+      internalID: 2595189612986071167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_17
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 215
+        width: 33
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6094df30fb5543c00800000000000000
+      internalID: 879422106138134790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_18
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 409
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d354b985eaa96a70800000000000000
+      internalID: 8820769248016356305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_19
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 409
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0ea0c2e2bdc02d0800000000000000
+      internalID: -3311030634670268186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_20
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 215
+        width: 228
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b527ad22c15ad50800000000000000
+      internalID: 6747830552703949720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_21
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 215
+        width: 164
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022b69df4da1f8960800000000000000
+      internalID: 7606327797741957664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_22
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 213
+        width: 171
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e622a408520d8baf0800000000000000
+      internalID: -380325309028097426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_23
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 409
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66515c261373587c0800000000000000
+      internalID: -4069786003009366682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_24
+      rect:
+        serializedVersion: 2
+        x: 4243
+        y: 409
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10839ba689844f330800000000000000
+      internalID: 3743697009714477057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_25
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 213
+        width: 165
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a1598b6a2c73f40800000000000000
+      internalID: 5708245074032531970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_26
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 215
+        width: 157
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92011494420e09050800000000000000
+      internalID: 5805386366133014569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_27
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 213
+        width: 172
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b671caa96fbd0fc0800000000000000
+      internalID: -3526952472603953487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_28
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 213
+        width: 172
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65822cbc0a232230800000000000000
+      internalID: 3612777560265622895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_29
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 154
+        width: 90
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368524722e01a7a40800000000000000
+      internalID: 5366620469472680035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_30
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 215
+        width: 33
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318a28a7a21085f50800000000000000
+      internalID: 6870242513509328915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_31
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 213
+        width: 145
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2966afd7e3db5acf0800000000000000
+      internalID: -241578928895269230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_32
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 213
+        width: 165
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6a8d9d177397260800000000000000
+      internalID: 7095763650024613581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_33
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 215
+        width: 272
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7a60e4dc033e930800000000000000
+      internalID: 4171231338210699246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_34
+      rect:
+        serializedVersion: 2
+        x: 4022
+        y: 215
+        width: 32
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc9fd2dc724ab0d0800000000000000
+      internalID: -3406337064271110917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_35
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 213
+        width: 141
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c46494e39a7fa970800000000000000
+      internalID: 8768361775127356609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_36
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 215
+        width: 32
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78f6a4bfac6603a0800000000000000
+      internalID: -6699547893761116035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splash2 - Copy_37
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 66
+        width: 825
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8e24a9707101f20800000000000000
+      internalID: 3391235840830269615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      splash2 - Copy_0: -4662589367000079645
+      splash2 - Copy_1: 4055596209026903624
+      splash2 - Copy_10: -6847659741310750030
+      splash2 - Copy_11: -7342761102572891001
+      splash2 - Copy_12: -2937903567969218016
+      splash2 - Copy_13: 1233303664720711452
+      splash2 - Copy_14: 7121125812487680659
+      splash2 - Copy_15: -4593181584155879499
+      splash2 - Copy_16: 2595189612986071167
+      splash2 - Copy_17: 879422106138134790
+      splash2 - Copy_18: 8820769248016356305
+      splash2 - Copy_19: -3311030634670268186
+      splash2 - Copy_2: 1628853315995174441
+      splash2 - Copy_20: 6747830552703949720
+      splash2 - Copy_21: 7606327797741957664
+      splash2 - Copy_22: -380325309028097426
+      splash2 - Copy_23: -4069786003009366682
+      splash2 - Copy_24: 3743697009714477057
+      splash2 - Copy_25: 5708245074032531970
+      splash2 - Copy_26: 5805386366133014569
+      splash2 - Copy_27: -3526952472603953487
+      splash2 - Copy_28: 3612777560265622895
+      splash2 - Copy_29: 5366620469472680035
+      splash2 - Copy_3: 2775810021162729891
+      splash2 - Copy_30: 6870242513509328915
+      splash2 - Copy_31: -241578928895269230
+      splash2 - Copy_32: 7095763650024613581
+      splash2 - Copy_33: 4171231338210699246
+      splash2 - Copy_34: -3406337064271110917
+      splash2 - Copy_35: 8768361775127356609
+      splash2 - Copy_36: -6699547893761116035
+      splash2 - Copy_37: 3391235840830269615
+      splash2 - Copy_4: -7273150309458598160
+      splash2 - Copy_5: -5382483754851525915
+      splash2 - Copy_6: -5927573936172191067
+      splash2 - Copy_7: -1637571305702481412
+      splash2 - Copy_8: -3549245746049583754
+      splash2 - Copy_9: -7104464228056140845
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

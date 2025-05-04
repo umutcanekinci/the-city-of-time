@@ -1,15 +1,16 @@
+
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class Interaction : MonoBehaviour
 {
+    // onInteract event
+    [SerializeField] private UnityEvent onInteract; // Unity event to be triggered on interaction
+
     [SerializeField] private NPC npc; // Reference to the NPC object
     public void Interact()
     {
-        npc.Talk(); // Call the Talk method on the NPC to start the dialogue    
-    }
-
-    public NPC GetNPC()
-    {
-        return npc; // Return the NPC object
+        onInteract.Invoke();
     }
 }
