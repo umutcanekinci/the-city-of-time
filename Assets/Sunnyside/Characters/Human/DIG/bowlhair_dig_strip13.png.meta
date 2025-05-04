@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bowlhair_dig_strip13_0: 6100610597190705130
+      bowlhair_dig_strip13_1: -1767058430916969245
+      bowlhair_dig_strip13_10: -345513465756960475
+      bowlhair_dig_strip13_11: 1106790404254149863
+      bowlhair_dig_strip13_12: 9114665362436862751
+      bowlhair_dig_strip13_2: -7094215916392439247
+      bowlhair_dig_strip13_3: 442677676604499711
+      bowlhair_dig_strip13_4: 7407256860019379931
+      bowlhair_dig_strip13_5: 5734144794192132493
+      bowlhair_dig_strip13_6: -8205682879623469548
+      bowlhair_dig_strip13_7: -2449520456051635173
+      bowlhair_dig_strip13_8: 7167237705238761981
+      bowlhair_dig_strip13_9: -8030549163403107247
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
