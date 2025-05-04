@@ -123,6 +123,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spikeyhair_mining_strip10_0: -2479011906308029930
+      spikeyhair_mining_strip10_1: -8315687963256681476
+      spikeyhair_mining_strip10_2: -82686879389542630
+      spikeyhair_mining_strip10_3: -8900290368049458142
+      spikeyhair_mining_strip10_4: -648544194840163602
+      spikeyhair_mining_strip10_5: -7031333892809893530
+      spikeyhair_mining_strip10_6: -6499524602730422135
+      spikeyhair_mining_strip10_7: -3558917068049916600
+      spikeyhair_mining_strip10_8: -1934558879825986551
+      spikeyhair_mining_strip10_9: 2710544220531132207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

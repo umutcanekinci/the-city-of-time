@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      curlyhair_carry_strip8_0: 7004599048578868997
+      curlyhair_carry_strip8_1: 7352975522197918913
+      curlyhair_carry_strip8_2: 7230483761472180316
+      curlyhair_carry_strip8_3: 8031423304549500029
+      curlyhair_carry_strip8_4: -431831917375034477
+      curlyhair_carry_strip8_5: -2137599144054572014
+      curlyhair_carry_strip8_6: -8684895011949351969
+      curlyhair_carry_strip8_7: -1963681742345829119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
