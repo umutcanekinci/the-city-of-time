@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1896924895683930536}
   - component: {fileID: 2040958279730645320}
-  - component: {fileID: 8337647666245564695}
   - component: {fileID: 4265648473469274120}
   m_Layer: 0
   m_Name: Item Sprite
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1684428147
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 7440981132975211316, guid: ca88e8313bedb7b4bacab7110183422e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -89,20 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8337647666245564695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2720647912403601287, guid: 1af3896f801c175489aeb668fcf517ae, type: 3}
-  m_PrefabInstance: {fileID: 8398401404685317331}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3488042224820949207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b433a89302cbdb34589ff7f99a1760bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemType: 0
-  itemAmount: 5
 --- !u!114 &4265648473469274120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +179,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1684428147
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.54509807}

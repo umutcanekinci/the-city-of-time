@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3005127921657925434}
   - component: {fileID: 4325561366693853801}
   - component: {fileID: 2346639015275858551}
+  - component: {fileID: 1756633218179481464}
+  - component: {fileID: 3681598264859319618}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -69,7 +71,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -137,6 +139,36 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1756633218179481464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328562967034501304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6f34a511fc3e49b72f8ad5a06d472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2261893840379209998}
+--- !u!114 &3681598264859319618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328562967034501304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9795b1fc99df51f418048072bbb283da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 3005127921657925434}
+  zoomSpeed: 1
+  minZoom: 3
+  maxZoom: 6
+  currentZoomState: 2
 --- !u!1 &5694935864671371403
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,9 +183,16 @@ GameObject:
   - component: {fileID: 7220195301770865622}
   - component: {fileID: 7705448589899492962}
   - component: {fileID: 3276857958944441105}
+  - component: {fileID: 810643277835667653}
+  - component: {fileID: 6444771441567272412}
+  - component: {fileID: 371030085027937188}
+  - component: {fileID: 6472531388228154890}
+  - component: {fileID: 340823256022092890}
+  - component: {fileID: 5987870037162302365}
+  - component: {fileID: 931319261109152116}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +207,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7989987979476297338}
@@ -215,15 +254,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1718956989
+  m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4030792056451597264, guid: 358fb5a1f9c57fc49855224f5b79775e, type: 3}
+  m_Sprite: {fileID: 3348675010200885593, guid: cfa495c717a36864fa4dbfbff9c9e0d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8125, y: 1.0625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -255,7 +294,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7220195301770865622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -293,14 +332,14 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.2}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.46153846, y: 0.4117647}
+    oldSize: {x: 0.8125, y: 1.0625}
+    newSize: {x: 0.8125, y: 1.0625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.558}
   m_EdgeRadius: 0
 --- !u!114 &7705448589899492962
 MonoBehaviour:
@@ -318,8 +357,8 @@ MonoBehaviour:
   animator: {fileID: 3276857958944441105}
   spriteRenderer: {fileID: 3979264621963359395}
   speed: 3
-  jumpForce: 5
-  gravity: 0
+  audioSource: {fileID: 371030085027937188}
+  walkingClip: {fileID: 8300000, guid: 4ad2b202de0d0e0478386bc214f89622, type: 3}
 --- !u!95 &3276857958944441105
 Animator:
   serializedVersion: 7
@@ -330,7 +369,7 @@ Animator:
   m_GameObject: {fileID: 5694935864671371403}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 2844879374021908421, guid: cfa495c717a36864fa4dbfbff9c9e0d4, type: 3}
+  m_Controller: {fileID: 9100000, guid: 066397c33d1c8f144a5436dc739d81f0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -342,3 +381,195 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &810643277835667653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e13edc053a8b404bb048fbb642c48da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  fishingMode: {fileID: 5987870037162302365}
+  playerMovement: {fileID: 7705448589899492962}
+  isInInteraction: 0
+--- !u!114 &6444771441567272412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2db4f888c8e3b4c9bf352c2513ac16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3276857958944441105}
+  damage: 50
+--- !u!82 &371030085027937188
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &6472531388228154890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6e423605e8a314888dd33b4af080b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Oyuncu
+  interactionText: 
+  nameColor: {r: 1, g: 0.8665654, b: 0, a: 1}
+  nameCanvasPrefab: {fileID: 2240864793397961659, guid: 1fc5b23040b48334c96aecb97803f908, type: 3}
+--- !u!114 &340823256022092890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3bcd209f0454b24ba2a3f2102773754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemManager: {fileID: 0}
+--- !u!114 &5987870037162302365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf84d66968a3550439a61ec1748f701f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishingUI: {fileID: 0}
+  mainCamera: {fileID: 3005127921657925434}
+  player: {fileID: 2261893840379209998}
+  isFishingModeStarted: 0
+  playerAnimation: {fileID: 931319261109152116}
+  cameraZoom: {fileID: 3681598264859319618}
+  slider: {fileID: 0}
+  successBar: {fileID: 0}
+  fishItemPrefab: {fileID: 800412925167606247, guid: d4871810b64e8a84cae4f60abc81b5ed, type: 3}
+--- !u!114 &931319261109152116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694935864671371403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940e15c7c05db3d4d8f07cf3de4569c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3276857958944441105}
+  playerTools: {fileID: 6444771441567272412}
+  fishingMode: {fileID: 5987870037162302365}

@@ -192,9 +192,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcState: 0
   dialogue: {fileID: 0}
-  conversationLines: []
-  busyConversation: 
-  npcSprite: {fileID: 0}
+  conversationLines:
+  - "\u201CBak hele, bu sabah oltaya tek bir bal\u0131k bile vurmad\u0131. Nehirde
+    bir gariplik var gibi. Hadi sen \u015Fans\u0131n\u0131 dene, birka\xE7 taze bal\u0131k
+    getir de beraber bir bakal\u0131m. Belki gen\xE7 eller daha bereketlidir!\u201D"
+  busyConversation: "\u201C\u015Eu a\u011Flar\u0131 tamir etmeden bir yere k\u0131p\u0131rdayamam.
+    Ellerim bal\u0131k pulu i\xE7inde, sonra konu\u015Fal\u0131m evlat.\u201D"
+  npcSprite: {fileID: 5757292663227549525, guid: ab3578708ef06b74ab15420822113db9, type: 3}
 --- !u!58 &566512796716157153
 CircleCollider2D:
   m_ObjectHideFlags: 0

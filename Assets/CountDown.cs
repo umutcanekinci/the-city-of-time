@@ -33,6 +33,7 @@ public class CountDown : MonoBehaviour
                 isCountingDown = false; // Stop the countdown
                 countdownText.text = "0"; // Set the text to zero
                 onCountdownComplete(); // Call the method to handle countdown completion
+                
             }
         }
     }
