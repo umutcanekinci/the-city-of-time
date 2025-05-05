@@ -52,11 +52,9 @@ public class Item : MonoBehaviour
 {
     [SerializeField] private ItemType itemType; // Type of the item
     [SerializeField] private int itemAmount; // Item amount
-    [SerializeField] private Sprite itemSprite; // Item sprite
 
     public ItemType ItemType => itemType; // Property to get the item type
     public int ItemAmount => itemAmount; // Property to get the item amount
-    public Sprite ItemSprite => itemSprite; // Property to get the item sprite
 
     public void SetItemAmount(int amount) // Method to set the item amount
     {

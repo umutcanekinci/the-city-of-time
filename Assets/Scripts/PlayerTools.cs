@@ -25,7 +25,7 @@ public class PlayerTools : MonoBehaviour
 
     public bool IsAnimationFinished()
     {
-        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.99f;
+        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.70f;
     }
 
     public void PlayCutAnimation(SourceHp treeHp)

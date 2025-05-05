@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      doorblue_0: 997903610524420219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

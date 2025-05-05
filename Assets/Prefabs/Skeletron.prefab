@@ -142,8 +142,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  interactionType: 0
-  npc: {fileID: 8283833201645967716}
 --- !u!58 &6325094000111108130
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -192,8 +190,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb68f2429d9e164b822679ed344dcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcState: 0
   dialogue: {fileID: 0}
   conversationLines: []
+  busyConversation: 
+  npcSprite: {fileID: 0}
 --- !u!58 &566512796716157153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -242,4 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6e423605e8a314888dd33b4af080b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectName: 
+  interactionText: "Konu\u015F"
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   nameCanvasPrefab: {fileID: 2240864793397961659, guid: 1fc5b23040b48334c96aecb97803f908, type: 3}

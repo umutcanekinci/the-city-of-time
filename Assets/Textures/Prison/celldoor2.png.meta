@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      celldoor2_0: 7400115097195883718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

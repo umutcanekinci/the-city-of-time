@@ -3,6 +3,7 @@ using UnityEngine;
 public class NameText : MonoBehaviour
 {
     [SerializeField] private string objectName;
+    [SerializeField] private string interactionText; // Text to display when interacting with the object
     [SerializeField] private Color nameColor = Color.white; // Color of the name text
     [SerializeField] private GameObject nameCanvasPrefab; // Prefab for the name canvas
     private GameObject nameText; // Prefab for the name text
@@ -21,6 +22,8 @@ public class NameText : MonoBehaviour
         GameObject nameCanvas = Instantiate(nameCanvasPrefab, transform); // Instantiate the name canvas prefab
         nameText = nameCanvas.transform.GetChild(0).gameObject;
         input = nameCanvas.transform.GetChild(1).gameObject; // Get the input text from the name canvas
+        GameObject inputText = input.transform.GetChild(0).gameObject; // Get the input text object
+        inputText.GetComponent<TMP_Text>().text = interactionText; // Set the interaction text to the input text
         nameText.GetComponent<TMP_Text>().text = objectName; // Set the name text to the object's name
         nameText.GetComponent<TMP_Text>().color = nameColor; // Set the color of the name text
     }

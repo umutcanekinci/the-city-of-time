@@ -11,12 +11,12 @@ public class TaskManager : MonoBehaviour
 
     public void Awake()
     {
-        dialogue.OnDialogueEnd += OnDialogueEnd; // Subscribe to the OnDialogueEnd event
+        dialogue.onDialogueEnd += OnDialogueEnd; // Subscribe to the OnDialogueEnd event
     }
 
     private void OnDestroy()
     {
-        dialogue.OnDialogueEnd -= OnDialogueEnd; // Unsubscribe from the OnDialogueEnd event
+        dialogue.onDialogueEnd -= OnDialogueEnd; // Unsubscribe from the OnDialogueEnd event
     }
 
     private void OnDialogueEnd(GameObject talkingObject)

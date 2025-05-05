@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private float typingSpeed = 0.05f; // Speed at which the text is typed out
     [SerializeField] private float defaultWaitTime = 1f; // Time to wait before displaying the next line
     [SerializeField] private float waitTimeAfterLastLine = 2f; // Time to wait after the last line before closing the dialogue box
-    public event Action<GameObject> OnDialogueEnd; // Event to notify when the dialogue ends
+    public event Action<GameObject> onDialogueEnd; // Event to notify when the dialogue ends
     private GameObject talkingObject; // Reference to the current NPC object
 
     private int currentLineIndex = 0; // Index of the current dialogue line being displayed
@@ -118,6 +118,6 @@ public class Dialogue : MonoBehaviour
         dialogueBox.SetActive(false); // Deactivate the dialogue box
         dialogueLines.Clear(); // Clear the dialogue lines array
         currentLineIndex = 0; // Reset the current line index to 0
-        OnDialogueEnd?.Invoke(talkingObject); // Invoke the dialogue end event
+        onDialogueEnd?.Invoke(talkingObject); // Invoke the dialogue end event
     }
 }

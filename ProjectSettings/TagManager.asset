@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - NPC
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -45,14 +46,17 @@ TagManager:
   - name: Background
     uniqueID: 3392773457
     locked: 0
-  - name: Mid
+  - name: Water
     uniqueID: 1012026577
     locked: 0
-  - name: Top
+  - name: Road
     uniqueID: 3337528095
     locked: 0
-  - name: Entities
+  - name: BotColliders
     uniqueID: 2748765845
+    locked: 0
+  - name: Bottom
+    uniqueID: 2525713477
     locked: 0
   - name: Player
     uniqueID: 2576010307
@@ -60,8 +64,11 @@ TagManager:
   - name: Player Skin
     uniqueID: 2121545731
     locked: 0
-  - name: TopPlayer
+  - name: TopColliders
     uniqueID: 889793585
+    locked: 0
+  - name: Top
+    uniqueID: 435129081
     locked: 0
   - name: UI
     uniqueID: 1684428147
