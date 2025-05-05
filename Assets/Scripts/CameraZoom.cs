@@ -13,7 +13,7 @@ public class CameraZoom : MonoBehaviour
     [SerializeField] private float zoomSpeed = 0.1f; // Speed of zooming in and out
     [SerializeField] private float minZoom = 5f; // Minimum zoom level
     [SerializeField] private float maxZoom = 15f; // Maximum zoom level
-    [SerializeField] private CameraZoomState currentZoomState = CameraZoomState.None; // Current zoom state
+    private CameraZoomState currentZoomState = CameraZoomState.None; // Current zoom state
     public bool IsZoomingIn => currentZoomState == CameraZoomState.ZoomIn; // Check if zooming in
     public bool IsZoomingOut => currentZoomState == CameraZoomState.ZoomOut; // Check if zooming out
     public bool IsZooming => currentZoomState != CameraZoomState.None; // Check if zooming
@@ -33,7 +33,7 @@ public class CameraZoom : MonoBehaviour
         if (currentZoomState == CameraZoomState.ZoomIn)
         {
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, minZoom, zoomSpeed * Time.deltaTime); // Zoom in
-            if (Mathf.Abs(mainCamera.orthographicSize - minZoom) < 0.1f) // Check if the zoom level is close to the minimum
+            if (Mathf.Abs(mainCamera.orthographicSize - minZoom) < 0.01f) // Check if the zoom level is close to the minimum
             {
                 SetState(CameraZoomState.None); // Reset the zoom state
             }
@@ -41,7 +41,7 @@ public class CameraZoom : MonoBehaviour
         else if (currentZoomState == CameraZoomState.ZoomOut)
         {
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, maxZoom, zoomSpeed * Time.deltaTime); // Zoom out
-            if (Mathf.Abs(mainCamera.orthographicSize - maxZoom) < 0.1f) // Check if the zoom level is close to the maximum
+            if (Mathf.Abs(mainCamera.orthographicSize - maxZoom) < 0.01f) // Check if the zoom level is close to the maximum
             {
                 SetState(CameraZoomState.None); // Reset the zoom state
             }

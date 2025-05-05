@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class FishingMode : MonoBehaviour
 {
@@ -11,30 +10,30 @@ public class FishingMode : MonoBehaviour
     [SerializeField] private bool isFishingModeStarted = false; // Flag to check if the player is fishing
     [SerializeField] private PlayerAnimation playerAnimation; // Reference to the Animator component
     [SerializeField] private CameraZoom cameraZoom; // Reference to the CameraZoom script
-    [SerializeField] private Slider slider;
-    [SerializeField] private RectTransform successBar; // Reference to the success bar UI element
-    [SerializeField] private Item fishItemPrefab; // Reference to the fish item prefab
-    public event Action onFishingEnd; // Event to notify when fishing ends
 
-    public void BeginStarting()
+    public event Action onFishingStart; // Event to notify when fishing starts
+    public event Action onFishingEnd; // Event to notify when fishing ends
+    public event Action onReeling; // Event to notify when reeling in a fish
+
+    public void StartFishing()
     {
-        playerAnimation.PlayAnimationWithEnd("casting", Activate); // Play the waiting animation
+        onFishingStart?.Invoke(); // Invoke the fishing start event
         cameraZoom.SetState(CameraZoom.CameraZoomState.ZoomIn);
     }
 
-    public void BeginStopping()
+    public void StopFishing()
     {
-        playerAnimation.PlayAnimationWithEnd("reeling", () => playerAnimation.PlayAnimationWithEnd("caught", onFishingEnd)); // Play the casting animation again to stop fishing
+        playerAnimation.Play("reeling"); // Play the casting animation again to stop fishing
         cameraZoom.SetState(CameraZoom.CameraZoomState.ZoomOut);
     }
 
-    public void Activate()
+    public void EnableFishingUI()
     {
         fishingUI.SetActive(true); // Activate the fishing UI
         isFishingModeStarted = true; // Set the fishing flag to true
     }
 
-    public void Disable()
+    public void DisableFishingUI()
     {
         fishingUI.SetActive(false); // Deactivate the fishing UI
         isFishingModeStarted = false; // Set the fishing flag to false
@@ -42,32 +41,27 @@ public class FishingMode : MonoBehaviour
 
     public void Update()
     {
-        if (isFishingModeStarted) {
-            if(playerAnimation.IsPlaying("waiting"))
-                slider.value = Mathf.PingPong(Time.time, 1); // Update the slider value for the success bar
-        
-            if (Input.GetKeyDown(KeyCode.E)) {
-                    BeginStopping(); // Stop fishing when E is pressed
-                    Disable(); // Disable the fishing UI
+        if (!cameraZoom.IsZooming) {
+            if (playerAnimation.IsFinished("reeling")) {
+                DisableFishingUI(); // Disable the fishing UI after zooming out
+                onFishingEnd?.Invoke(); // Invoke the fishing end event
             }
+            else if (playerAnimation.IsFinished("casting"))
+                EnableFishingUI(); // Enable the fishing UI after zooming in
+        }
 
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if(isFishingModeStarted) // If the player is not fishing, start fishing
+                StopFishing(); // Stop fishing when E is pressed
+        }
+
+        if (isFishingModeStarted) {
             if (Input.GetKeyDown(KeyCode.F)) // Check if the player is fishing and presses the F key
             {
                 // Handle the fishing action here (e.g., catch a fish)
-                playerAnimation.PlayAnimationWithEnd("reeling", () => playerAnimation.PlayAnimationWithEnd("caught", OnCaught)); // Play the reeling animation
+                onReeling?.Invoke(); // Invoke the reeling event
             }
         }
-    }
-
-    public void OnCaught() {   
-        // Check if the slider value is within the success range then instantiate the fish
-        if (slider.value >= 0.5f) {
-            Item fishItem = Instantiate(fishItemPrefab, player.position, Quaternion.identity); // Instantiate the fish item prefab at the player's position
-            fishItem.gameObject.SetActive(true); // Activate the fish item
-        } else {
-            Debug.Log("Missed!"); // Log a message if the player missed
-        }
-        playerAnimation.Play("waiting"); // Play the waiting animation again
     }
 
 }

@@ -8,7 +8,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private Dialogue dialogue; // Reference to the Dialogue script
     [SerializeField] private FishingMode fishingMode; // Reference to the FishingMode script
     [SerializeField] private PlayerMovement playerMovement; // Reference to the PlayerMovement script
-    [SerializeField] private bool isInInteraction = false; // Flag to check if the player is in interaction
+    private bool isInInteraction = false; // Flag to check if the player is in interaction
     private ArrayList objectsInRange; // Array to store objects in range
     private Interaction closestInteractable;
     private Interaction interact;
@@ -28,13 +28,13 @@ public class PlayerInteraction : MonoBehaviour
     public void EnableInteraction()
     {
         isInInteraction = false; // Reset the interaction flag
-        playerMovement.enabled = true; // Disable player movement
+        playerMovement.enabled = false; // Disable player movement
     }
 
     public void DisableInteraction()
     {
         isInInteraction = true; // Set the interaction flag to true
-        playerMovement.enabled = false; // Enable player movement
+        playerMovement.enabled = true; // Enable player movement
     }
 
     private void Start()
@@ -71,14 +71,11 @@ public class PlayerInteraction : MonoBehaviour
         if (closestInteractable == null) return; // If there is no closest interactable object, exit the method
 
         foreach (Interaction interact in objectsInRange) // Loop through all objects in range
-            if(Input.GetKeyDown(KeyCode.E))
-                interact.GetComponent<NameText>().Highlight(false);
-            else
-                interact.GetComponent<NameText>().Highlight(interact == closestInteractable);
+            interact.GetComponent<NameText>().Highlight(interact == closestInteractable);
 
         if (Input.GetKeyDown(KeyCode.E)) {
             closestInteractable.Interact(); // Start the dialogue with the closest interactable object
-            DisableInteraction();
+            isInInteraction = true; // Set the interaction flag to true
         }
     }
 
