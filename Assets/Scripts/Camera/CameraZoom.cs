@@ -10,13 +10,12 @@ public class CameraZoom : MonoBehaviour
         None
     }
 
-
     private float minZoom = 3f; // Minimum zoom level
     private float maxZoom = 6f; // Maximum zoom level
-    [SerializeField] private CountDown countDown; // Reference to the countdown timer
-    [SerializeField] private HouseDetecter houseDetecter; // Reference to the house detector
-    [SerializeField] private Spawner playerSpawner; // Reference to the player spawner
-    [SerializeField] private Camera mainCamera; // Reference to the camera
+    [SerializeField] private CountDown countDown;
+    [SerializeField] private HouseDetecter houseDetecter;
+    [SerializeField] private Spawner playerSpawner;
+    [SerializeField] private Camera mainCamera;
     [SerializeField] private float zoomSpeed = 0.1f; // Speed of zooming in and out
     [SerializeField] private float currentZoom;
     [SerializeField] private float targetZoom;
@@ -24,11 +23,14 @@ public class CameraZoom : MonoBehaviour
     [SerializeField] private float deathZoom = 20f; // Zoom level when the player dies
     [SerializeField] private float outHouseZoom = 5f; // Zoom level when outside the house
     [SerializeField] private CameraZoomState currentZoomState = CameraZoomState.None; // Current zoom state
-    
+
+    public float InHouseZoom => inHouseZoom; // Public property to get the in-house zoom level
+    public float OutHouseZoom => outHouseZoom; // Public property to get the out-house zoom level
+
     public void Awake()
     {
         countDown.onCountdownEnd += () => SmoothZoom(deathZoom); // Subscribe to the countdown end event
-        playerSpawner.onSpawned += () => SmoothZoom(inHouseZoom); // Subscribe to the spawn event
+        playerSpawner.onSpawned += () => SmoothZoom(houseDetecter.IsInsideHouse ? inHouseZoom : outHouseZoom); // Subscribe to the spawn event
         houseDetecter.onHouseEnter += () => SmoothZoom(inHouseZoom); // Subscribe to the house enter event
         houseDetecter.onHouseExit += () => SmoothZoom(outHouseZoom); // Subscribe to the house exit event
     }

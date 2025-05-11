@@ -7,6 +7,7 @@ TagManager:
   - NPC
   - Item
   - FxTemporaire
+  - Floor
   layers:
   - Default
   - TransparentFX

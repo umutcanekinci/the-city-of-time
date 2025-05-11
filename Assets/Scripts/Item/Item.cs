@@ -62,6 +62,12 @@ public class Item : MonoBehaviour
     public ItemType ItemType => itemType; // Property to get the item type
     public int ItemAmount => itemAmount; // Property to get the item amount
 
+    
+    public override String ToString() // Method to convert the item to a string
+    {
+        return $"{itemType} ({itemAmount})";
+    }
+
     public void SetItemAmount(int amount) // Method to set the item amount
     {
         itemAmount = amount;
