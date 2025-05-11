@@ -7,7 +7,6 @@ public class PlayerAnimation : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager; // Reference to the GameManager script
     [SerializeField] private Animator animator; // Reference to the Animator component
-    [SerializeField] private PlayerTools playerTools; // Reference to the PlayerTools script
     [SerializeField] private FishingMode fishingMode;
 
     private void Awake()

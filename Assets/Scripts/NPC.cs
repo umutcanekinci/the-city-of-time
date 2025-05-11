@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
-using TMPro;
-using System.Collections;
+
 public class NPC : MonoBehaviour
 {
     public enum NPCState {

@@ -6,6 +6,7 @@ public class TreeSpriteChanger : MonoBehaviour
     [SerializeField] private SourceHp sourceHp; // Reference to the SourceHp script
     
     [SerializeField] private Animator leavesAnimator; // Reference to the leaves animator
+    
     private void Awake()
     {
         sourceHp.OnSourceDestroyed += OnTreeDestroyed; // Subscribe to the tree destroyed event

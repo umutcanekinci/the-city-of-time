@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class SourceHp : MonoBehaviour
 {
-    [SerializeField] private ItemManager itemManager; // Reference to the item manager
     [SerializeField] private int maxHp = 100; // Maximum health of the tree
     [SerializeField] private int currentHp; // Current health of the tree
     

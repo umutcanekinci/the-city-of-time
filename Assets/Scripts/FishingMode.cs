@@ -6,13 +6,11 @@ using UnityEngine.UI;
 public class FishingMode : MonoBehaviour
 {
     [SerializeField] private GameObject fishingUI; // Reference to the fishing UI
-    [SerializeField] private Camera mainCamera; // Reference to the main camera
     [SerializeField] private Transform player; // Reference to the player transform]
     [SerializeField] private bool isFishingModeStarted = false; // Flag to check if the player is fishing
     [SerializeField] private PlayerAnimation playerAnimation; // Reference to the Animator component
     [SerializeField] private CameraZoom cameraZoom; // Reference to the CameraZoom script
     [SerializeField] private Slider slider;
-    [SerializeField] private RectTransform successBar; // Reference to the success bar UI element
     [SerializeField] private Item fishItemPrefab; // Reference to the fish item prefab
     public event Action onFishingEnd; // Event to notify when fishing ends
 

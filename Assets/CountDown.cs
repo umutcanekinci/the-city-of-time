@@ -7,8 +7,6 @@ public class CountDown : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager; // Reference to the GameManager script
     [SerializeField] private PlayerMovement playerMovement; // Reference to the PlayerMovement script
-    [SerializeField] private ItemManager itemManager; // Reference to the ItemManager script
-    [SerializeField] private TaskManager taskManager; // Reference to the TaskManager script
     [SerializeField] private PlayerAnimation playerAnimation; // Reference to the PlayerAnimation script
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private TextMeshProUGUI countdownText; // Reference to the TextMeshProUGUI component for displaying the countdown
@@ -16,23 +14,29 @@ public class CountDown : MonoBehaviour
     [SerializeField] private bool isCountingDown = true; // Flag to check if the countdown is active
     [SerializeField] private float currentTime; // Variable to keep track of the current countdown time
     public event Action onCountdownEnd; // Event triggered when the countdown ends
-    public event Action onCountdownStart; // Event triggered when the countdown starts
 
     private void Awake()
     {
-        gameManager.onGameStart += onGameStart; // Subscribe to the game start event to reset the timer
+        gameManager.onGameStart += OnGameStart; // Subscribe to the game start event to reset the timer
     }
 
     private void OnDestroy()
     {
-        gameManager.onGameStart -= onGameStart; // Unsubscribe from the game start event
+        gameManager.onGameStart -= OnGameStart; // Unsubscribe from the game start event
     }
 
-    private void onGameStart()
+    private void OnGameStart()
     {
         explosionPrefab.SetActive(false); // Deactivate the explosion prefab
         playerMovement.enabled = true; // Enable player movement
         ResetTimer(); // Reset the timer when the game starts
+    }
+
+    public void ResetTimer()
+    {
+        isCountingDown = true; // Start the countdown
+        currentTime = countdownTime; // Reset the current time to the countdown time
+        countdownText.color = Color.white; // Reset the text color to white
     }
 
     private void Update()
@@ -73,12 +77,5 @@ public class CountDown : MonoBehaviour
     {
         yield return new WaitForSeconds(1f); // Wait for 1 second before resetting
         gameManager.StartGame();
-    }
-
-    public void ResetTimer()
-    {
-        isCountingDown = true; // Start the countdown
-        currentTime = countdownTime; // Reset the current time to the countdown time
-        countdownText.color = Color.white; // Reset the text color to white
     }
 }
