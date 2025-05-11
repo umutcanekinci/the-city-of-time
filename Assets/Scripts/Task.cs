@@ -30,4 +30,10 @@ using UnityEngine;
         {
             isCompleted = true;
         }
+
+        public void ResetTask()
+        {
+            isCompleted = false;
+            item.SetCollectedAmount(0); // Toplanacak nesne miktarını sıfırla
+        }
     }
