@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1684428147
-  m_SortingLayer: 8
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -241,7 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7c8859c1d3303448900ec4bb6213c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemManager: {fileID: 0}
   maxHp: 100
   currentHp: 0
 --- !u!61 &8131778493445026774
@@ -332,7 +331,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 889793585
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 7796452692219352389, guid: bea7c9b07bbcef64e99b5782b13a07cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -357,12 +356,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6c0c29676143c41a175b97bc4ba7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInteraction: {fileID: 0}
   item: {fileID: 800412925167606247, guid: 624df61b99068654cb77d0636951cf6a, type: 3}
   sourceSprite: {fileID: 7796452692219352389, guid: bea7c9b07bbcef64e99b5782b13a07cb, type: 3}
   itemManager: {fileID: 0}
   playerTools: {fileID: 0}
   dialogue: {fileID: 0}
-  treeHp: {fileID: 3379637845763742785}
+  sourceHp: {fileID: 3379637845763742785}
 --- !u!114 &8770915487980075556
 MonoBehaviour:
   m_ObjectHideFlags: 0

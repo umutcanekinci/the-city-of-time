@@ -33,10 +33,18 @@ public class Dialogue : MonoBehaviour
         dialogueLines.Add(line); // Add the new line to the dialogue lines array
     }
 
+    private bool IsActive()
+    {
+        return dialogueBox.activeSelf; // Check if the dialogue box is currently active
+    }
+
     public void StartDialogue(GameObject talkingObject, string[] dialogueLines, Sprite sprite = null)
     {
-        if (dialogueBox.activeSelf) return; // If the dialogue object is already active, exit the method
-        if (dialogueLines == null || dialogueLines.Length == 0) return; // If there are no dialogue lines, exit the method
+        if (IsActive())
+            return;
+
+        if (dialogueLines == null || dialogueLines.Length == 0)
+            throw new ArgumentException("Dialogue lines cannot be null or empty.", nameof(dialogueLines));
 
         this.talkingObject = talkingObject; // Store the reference to the current NPC object
         nameText.text = talkingObject.GetComponent<NameText>().Name; // Set the NPC's name in the dialogue box
