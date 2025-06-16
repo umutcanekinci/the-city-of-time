@@ -3,6 +3,8 @@
 
 **Zamanın Şehri**, oyuncuyu zamanda sıkışmış gizemli bir şehirde, farklı görevler ve karakterlerle dolu bir macera yaşatmayı amaçlayan bir görev tabanlı 2D oyun projesidir. Balık tutma, çiftçilik, keşif ve bulmacalarla zamanın ipuçlarını toplayarak şehrin dengesini yeniden kurun.
 
+<a href="https://www.youtube.com/watch?v=H77jEePix2U">Trailer</a>
+
 ## 🎮 Oynanış Özellikleri
 
 - 🐟 Balık tutma mini oyunu ve Fishing UI
