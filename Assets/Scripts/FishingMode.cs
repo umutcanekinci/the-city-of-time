@@ -97,6 +97,7 @@ public class FishingMode : MonoBehaviour
             resultText.SetColor(Color.red); // Set the text color to red
             resultText.SetText("Missed!"); // Set the text to "Missed!"
         }
+        
         resultText.Start();
         ResetSliderValues();
         playerAnimation.Play("waiting"); // Play the waiting animation again
